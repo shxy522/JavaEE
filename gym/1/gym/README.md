@@ -23,7 +23,98 @@ GYM DEMO
 * cache
     * 实现spring cache连接windows redis对请求结果进行缓存
     
-##
+##目录结构说明
+│  .gitattributes
+│  .gitignore
+│  
+└─gym
+    │  .classpath
+    │  .gitignore
+    │  .project
+    │  mvnw
+    │  mvnw.cmd
+    │  pom.xml
+    │  README.md                                                        //文档
+    │  
+    ├─.mvn
+    │  └─wrapper
+    │          maven-wrapper.jar
+    │          maven-wrapper.properties
+    │          MavenWrapperDownloader.java
+    │          
+    ├─.settings
+    │      org.eclipse.core.resources.prefs
+    │      org.eclipse.jdt.apt.core.prefs
+    │      org.eclipse.jdt.core.prefs
+    │      org.eclipse.m2e.core.prefs
+    │      
+    ├─src
+    │  ├─main
+    │  │  ├─java
+    │  │  │  └─edu
+    │  │  │      └─bjtu
+    │  │  │          └─ee4j
+    │  │  │              └─gym
+    │  │  │                  │  GymApplication.java                    //应用入口
+    │  │  │                  │  
+    │  │  │                  ├─config
+    │  │  │                  │      SecurityConfig.java                //security权限管理：拦截未认证请求+密码加密
+    │  │  │                  │      
+    │  │  │                  ├─controller
+    │  │  │                  │      AuthController.java
+    │  │  │                  │      PageController.java                //测试文件
+    │  │  │                  │      PostController.java                //表单管理：实现spring cache连接windows redis对请求结果进行缓存
+    │  │  │                  │      
+    │  │  │                  ├─exception                               //异常处理
+    │  │  │                  │      PostExceptionHandler.java
+    │  │  │                  │      PostNotFoundException.java
+    │  │  │                  │      
+    │  │  │                  ├─model
+    │  │  │                  │      Post.java
+    │  │  │                  │      PostShares.java
+    │  │  │                  │      User.java
+    │  │  │                  │      UserAuth.java
+    │  │  │                  │      
+    │  │  │                  ├─repository
+    │  │  │                  │      AuthRepository.java
+    │  │  │                  │      PostRepository.java
+    │  │  │                  │      UserRepository.java
+    │  │  │                  │      
+    │  │  │                  ├─service
+    │  │  │                  │      AuthService.java
+    │  │  │                  │      PostService.java
+    │  │  │                  │      UserDetailsServiceImpl.java
+    │  │  │                  │      UserService.java
+    │  │  │                  │      
+    │  │  │                  └─util
+    │  │  │                          StringUtil.java
+    │  │  │                          
+    │  │  └─resources
+    │  │      │  application.properties                             //变量配置
+    │  │      │  
+    │  │      └─templates
+    │  │              login.html                                    //登录页面
+    │  │              post.html                                     //表单管理
+    │  │              test.html                                     //测试
+    │  │              
+    │  └─test
+    │      └─java
+    │          └─edu
+    │              └─bjtu
+    │                  └─ee4j
+    │                      └─gym
+    │                              GymApplicationTests.java
+    │                              
+    └─target
+        ├─classes
+        │  │  application.properties
+        │  │  
+        │  └─templates
+        │          login.html
+        │          post.html
+        │          test.html
+        │          
+        └─test-classes
 
 ##小组人员
 
