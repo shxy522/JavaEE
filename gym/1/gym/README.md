@@ -30,7 +30,7 @@ GYM DEMO
 >> .gitignore  
 >> mvnw  
 >> mvnw.cmd  
->> pom.xml                                                       //maven管理文件  
+>> pom.xml                                         //maven管理文件  
 >> README.md                                                     //文档      
 >> .mvn  
 >>> wrapper  
