@@ -24,7 +24,7 @@ GYM DEMO
     * 实现spring cache连接windows redis对请求结果进行缓存
     
 ##目录结构说明  
-│  .gitattributes  
+│&nbsp; .gitattributes  
 │  .gitignore  
 │    
 └─gym  
