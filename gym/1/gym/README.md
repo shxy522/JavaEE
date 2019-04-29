@@ -36,7 +36,8 @@ GYM DEMO
 > > > wrapper  
 > > > > maven-wrapper.jar  
 > > > > maven-wrapper.properties  
-> > > > MavenWrapperDownloader.java  
+> > > > MavenWrapperDownloader.java   
+> >  
 > > src  
 > > > main  
 > > > > java                                                    //代码  
