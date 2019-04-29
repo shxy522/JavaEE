@@ -30,8 +30,8 @@ GYM DEMO
 >> .gitignore  
 >> mvnw  
 >> mvnw.cmd  
->> pom.xml                                         //maven管理文件  
->> README.md                                                     //文档      
+>> pom.xml &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//maven管理文件  
+>> README.md            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//文档      
 >> .mvn  
 >>> wrapper  
 >>>> maven-wrapper.jar  
@@ -40,7 +40,7 @@ GYM DEMO
 >>  
 >> src  
 >>> main  
->>>> java                                                    //代码  
+>>>> java           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//代码  
 >>>>> edu  
 >>>>>> bjtu  
 >>>>>>> ee4j  
@@ -78,9 +78,9 @@ GYM DEMO
 >>>>>>>>> util                                 //工具类  
 >>>>>>>>>> StringUtil.java                //字符串相关工具  
 >>>> 
->>>> resources                                               //静态文件  
+>>>> resources      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//静态文件  
 >>>>> application.properties                             //配置文件   
->>>>> templates                                           //静态页面  
+>>>>> templates  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//静态页面  
 >>>>>> login.html                                    //登录页面  
 >>>>>> post.html                                     //表单管理  
 >>>>>> test.html                                     //测试页面    
@@ -93,7 +93,7 @@ GYM DEMO
 >>>>>>>> gym  
 >>>>>>>>> GymApplicationTests.java   
 >>
->> target                                                        //maven生成  
+>> target               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//maven生成  
 >>> classes  
 >>>> application.properties                                //配置文件    
 >>>> templates  
