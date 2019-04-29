@@ -69,10 +69,10 @@ GYM DEMO
 >>>>>>>>>> PostRepository.java  
 >>>>>>>>>> UserRepository.java   
 >>>>>>>>>
->>>>>>>>> service &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//数据服务  
->>>>>>>>>> AuthService.java &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//权限管理  
->>>>>>>>>> PostService.java &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//表单管理  
->>>>>>>>>> UserDetailsServiceImpl.java &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//用户详细管理  
+>>>>>>>>> service &emsp;&emsp;&emsp;&emsp;&emsp;//数据服务  
+>>>>>>>>>> AuthService.java &emsp;&emsp;&emsp;//权限管理  
+>>>>>>>>>> PostService.java &emsp;&emsp;&emsp;//表单管理  
+>>>>>>>>>> UserDetailsServiceImpl.java &emsp;//用户详细管理  
 >>>>>>>>>> UserService.java &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//用户管理    
 >>>>>>>>>
 >>>>>>>>> util &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//工具类  
