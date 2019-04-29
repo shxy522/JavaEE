@@ -24,92 +24,93 @@ GYM DEMO
     * 实现spring cache连接windows redis对请求结果进行缓存
     
 ##目录结构说明  
-'''  
-+--.gitattributes  
-+--.gitignore  
+ [toc]   
+│  .gitattributes  
+│  .gitignore  
 │    
-+--gym  
-    +--.classpath  
-    +--.gitignore  
-    +--.project  
-    +--mvnw  
-    +--mvnw.cmd  
-    +--pom.xml                                                       //maven管理文件  
-    +--README.md                                                     //文档  
+└─gym  
+    │  .classpath  
+    │  .gitignore  
+    │  .project  
+    │  mvnw  
+    │  mvnw.cmd  
+    │  pom.xml                                                       //maven管理文件  
+    │  README.md                                                     //文档  
     │    
-    +--.mvn  
-    │  +--wrapper  
-    │     +--maven-wrapper.jar  
-    │     +--maven-wrapper.properties  
-    │     +--MavenWrapperDownloader.java  
+    ├─.mvn  
+    │  └─wrapper  
+    │          maven-wrapper.jar  
+    │          maven-wrapper.properties  
+    │          MavenWrapperDownloader.java  
     │        
-    +--src  
-    │  +--main  
-    │  │  +--java                                                    //代码  
-    │  │  │  +--edu  
-    │  │  │      +--bjtu  
-    │  │  │          +--ee4j  
-    │  │  │              +--gym  
-    │  │  │                  +--GymApplication.java                 //程序入口 
-    │  │  │                  +--config  
+    ├─src  
+    │  ├─main  
+    │  │  ├─java                                                    //代码  
+    │  │  │  └─edu  
+    │  │  │      └─bjtu  
+    │  │  │          └─ee4j  
+    │  │  │              └─gym  
+    │  │  │                  │  GymApplication.java                 //程序入口  
+    │  │  │                  │    
+    │  │  │                  ├─config  
     │  │  │                  │      SecurityConfig.java             //security权限管理：拦截未认证请求+密码加密  
     │  │  │                  │        
-    │  │  │                  +--controller                           //页面访问控制  
+    │  │  │                  ├─controller                           //页面访问控制  
     │  │  │                  │      AuthController.java             //登录注册  
     │  │  │                  │      PageController.java             //测试文件  
     │  │  │                  │      PostController.java             //表单管理：实现spring cache连接windows redis对请求结果进行缓存  
     │  │  │                  │        
-    │  │  │                  +--exception                            //异常处理  
+    │  │  │                  ├─exception                            //异常处理  
     │  │  │                  │      PostExceptionHandler.java  
     │  │  │                  │      PostNotFoundException.java  
     │  │  │                  │        
-    │  │  │                  +--model                                //实体类  
+    │  │  │                  ├─model                                //实体类  
     │  │  │                  │      Post.java  
     │  │  │                  │      PostShares.java  
     │  │  │                  │      User.java  
     │  │  │                  │      UserAuth.java  
     │  │  │                  │        
-    │  │  │                  +--repository                           //数据访问接口  
+    │  │  │                  ├─repository                           //数据访问接口  
     │  │  │                  │      AuthRepository.java  
     │  │  │                  │      PostRepository.java  
     │  │  │                  │      UserRepository.java  
     │  │  │                  │        
-    │  │  │                  +--service                              //数据服务  
+    │  │  │                  ├─service                              //数据服务  
     │  │  │                  │      AuthService.java                //权限管理  
     │  │  │                  │      PostService.java                //表单管理  
     │  │  │                  │      UserDetailsServiceImpl.java     //用户详细管理  
     │  │  │                  │      UserService.java                //用户管理  
     │  │  │                  │        
-    │  │  │                  +--util                                 //工具类  
+    │  │  │                  └─util                                 //工具类  
     │  │  │                          StringUtil.java                //字符串相关工具  
     │  │  │                            
-    │  │  +--resources                                               //静态文件  
+    │  │  └─resources                                               //静态文件  
     │  │      │  application.properties                             //配置文件  
     │  │      │    
-    │  │      +--templates                                           //静态页面  
+    │  │      └─templates                                           //静态页面  
     │  │              login.html                                    //登录页面  
     │  │              post.html                                     //表单管理  
     │  │              test.html                                     //测试页面  
     │  │                
-    │  +--test  
-    │      +--java  
-    │          +--edu  
-    │              +--bjtu  
-    │                  +--ee4j  
-    │                      +--gym  
+    │  └─test  
+    │      └─java  
+    │          └─edu  
+    │              └─bjtu  
+    │                  └─ee4j  
+    │                      └─gym  
     │                              GymApplicationTests.java  
     │                                
-    +--target                                                        //maven生成  
-        +--classes  
+    └─target                                                        //maven生成  
+        ├─classes  
         │  │  application.properties                                //配置文件  
         │  │    
-        │  +--templates  
+        │  └─templates  
         │          login.html                                       //登录网页  
         │          post.html                                        //表单管理  
         │          test.html                                        //测试页面  
         │            
-        +--test-classes                                                
-'''  
+        └─test-classes                                                
+ [toc]     
 ##小组人员
 
 |姓名|学号|
