@@ -33,69 +33,63 @@ GYM DEMO
     │  .project
     │  mvnw
     │  mvnw.cmd
-    │  pom.xml
-    │  README.md                                                        //文档
+    │  pom.xml                                                       //maven管理文件
+    │  README.md                                                     //文档
     │  
     ├─.mvn
     │  └─wrapper
     │          maven-wrapper.jar
     │          maven-wrapper.properties
     │          MavenWrapperDownloader.java
-    │          
-    ├─.settings
-    │      org.eclipse.core.resources.prefs
-    │      org.eclipse.jdt.apt.core.prefs
-    │      org.eclipse.jdt.core.prefs
-    │      org.eclipse.m2e.core.prefs
     │      
     ├─src
     │  ├─main
-    │  │  ├─java
+    │  │  ├─java                                                    //代码
     │  │  │  └─edu
     │  │  │      └─bjtu
     │  │  │          └─ee4j
     │  │  │              └─gym
-    │  │  │                  │  GymApplication.java                    //应用入口
+    │  │  │                  │  GymApplication.java                 //程序入口
     │  │  │                  │  
     │  │  │                  ├─config
-    │  │  │                  │      SecurityConfig.java                //security权限管理：拦截未认证请求+密码加密
+    │  │  │                  │      SecurityConfig.java             //security权限管理：拦截未认证请求+密码加密
     │  │  │                  │      
-    │  │  │                  ├─controller
-    │  │  │                  │      AuthController.java
-    │  │  │                  │      PageController.java                //测试文件
-    │  │  │                  │      PostController.java                //表单管理：实现spring cache连接windows redis对请求结果进行缓存
+    │  │  │                  ├─controller                           //页面访问控制
+    │  │  │                  │      AuthController.java             //登录注册
+    │  │  │                  │      PageController.java             //测试文件
+    │  │  │                  │      PostController.java             //表单管理：实现spring cache连接windows redis对请求结果进行缓存
     │  │  │                  │      
-    │  │  │                  ├─exception                               //异常处理
+    │  │  │                  ├─exception                            //异常处理
     │  │  │                  │      PostExceptionHandler.java
     │  │  │                  │      PostNotFoundException.java
     │  │  │                  │      
-    │  │  │                  ├─model
+    │  │  │                  ├─model                                //实体类
     │  │  │                  │      Post.java
     │  │  │                  │      PostShares.java
     │  │  │                  │      User.java
     │  │  │                  │      UserAuth.java
     │  │  │                  │      
-    │  │  │                  ├─repository
+    │  │  │                  ├─repository                           //数据访问接口
     │  │  │                  │      AuthRepository.java
     │  │  │                  │      PostRepository.java
     │  │  │                  │      UserRepository.java
     │  │  │                  │      
-    │  │  │                  ├─service
-    │  │  │                  │      AuthService.java
-    │  │  │                  │      PostService.java
-    │  │  │                  │      UserDetailsServiceImpl.java
-    │  │  │                  │      UserService.java
+    │  │  │                  ├─service                              //数据服务
+    │  │  │                  │      AuthService.java                //权限管理
+    │  │  │                  │      PostService.java                //表单管理
+    │  │  │                  │      UserDetailsServiceImpl.java     //用户详细管理
+    │  │  │                  │      UserService.java                //用户管理
     │  │  │                  │      
-    │  │  │                  └─util
-    │  │  │                          StringUtil.java
+    │  │  │                  └─util                                 //工具类
+    │  │  │                          StringUtil.java                //字符串相关工具
     │  │  │                          
-    │  │  └─resources
-    │  │      │  application.properties                             //变量配置
+    │  │  └─resources                                               //静态文件
+    │  │      │  application.properties                             //配置文件
     │  │      │  
-    │  │      └─templates
+    │  │      └─templates                                           //静态页面
     │  │              login.html                                    //登录页面
     │  │              post.html                                     //表单管理
-    │  │              test.html                                     //测试
+    │  │              test.html                                     //测试页面
     │  │              
     │  └─test
     │      └─java
@@ -105,16 +99,16 @@ GYM DEMO
     │                      └─gym
     │                              GymApplicationTests.java
     │                              
-    └─target
+    └─target                                                        //maven生成
         ├─classes
-        │  │  application.properties
+        │  │  application.properties                                //配置文件
         │  │  
         │  └─templates
-        │          login.html
-        │          post.html
-        │          test.html
+        │          login.html                                       //登录网页
+        │          post.html                                        //表单管理
+        │          test.html                                        //测试页面
         │          
-        └─test-classes
+        └─test-classes                                              
 
 ##小组人员
 
